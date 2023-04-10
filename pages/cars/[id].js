@@ -40,13 +40,9 @@ export default function cars({ car }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const req = await fetch(
-    `https://piece2.herokuapp.com/piece/img/${params.id}`
-  );
-
-  const data = await req.json();
+  const req = `https://piece2.herokuapp.com/piece/img/${params.id}`
 
   return {
-    props: { car: data },
+    props: { car: req },
   };
 }
