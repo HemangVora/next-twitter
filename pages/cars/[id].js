@@ -25,7 +25,7 @@ export default function cars({ car }) {
           content="Piece - Turn Tweets into collectibles"
         />
         <meta name="twitter:site" content="piece.gg" />
-        <meta property="og:description" content="__DESCRIPTION__" />
+        <meta property="og:description" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
         <meta property="og:image" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
       </Head>
        
