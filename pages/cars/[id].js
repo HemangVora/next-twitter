@@ -14,8 +14,9 @@ export default function cars({ car }) {
           property="og:title"
           content="Piece - Turn Tweets into collectibles"
         /> 
-        <meta property="og:description" content={"https://piece2.herokuapp.com/piece/previewImage/"+id} />
+        <meta property="og:description" content={id} />
         <meta property="og:image" content={"https://piece2.herokuapp.com/piece/previewImage/"+id} />
+        <meta property="twitter:image:src" content={"https://piece2.herokuapp.com/piece/previewImage/"+id} />
       </Head>
        
     </>
