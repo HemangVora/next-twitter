@@ -9,24 +9,13 @@ export default function cars({ car }) {
     <>
       <Head>
         <title>{id}</title> 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="piece.gg" />
-        <meta
-          name="twitter:title"
-          content="Piece - Turn Tweets into collectibles"
-        />
-        <meta name="twitter:creator" content="piece.gg" />
-        <meta property="og:image" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://piece.gg" />
+        <meta name="twitter:card" content="summary_large_image" /> 
         <meta
           property="og:title"
           content="Piece - Turn Tweets into collectibles"
-        />
-        <meta name="twitter:site" content="piece.gg" />
-        <meta property="og:description" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
-        <meta property="og:image" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
+        /> 
+        <meta property="og:description" content={"https://piece2.herokuapp.com/piece/previewImage/"+id} />
+        <meta property="og:image" content={"https://piece2.herokuapp.com/piece/previewImage/"+id} />
       </Head>
        
     </>
@@ -34,7 +23,7 @@ export default function cars({ car }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const req = `https://piece2.herokuapp.com/piece/previewImage/${params.id}`.toString()
+  const req = `https://piece2.herokuapp.com/piece/previewImage/${params.id}`
 
   return {
     props: { car: req },
