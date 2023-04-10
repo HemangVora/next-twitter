@@ -17,7 +17,7 @@ export default function cars({ car }) {
           content="Piece - Turn Tweets into collectibles"
         />
         <meta name="twitter:creator" content="piece.gg" />
-        <meta name="twitter:image" content={car.img1} />
+        <meta name="twitter:image" content={car} />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://piece.gg" />
@@ -27,7 +27,7 @@ export default function cars({ car }) {
         />
         <meta name="twitter:site" content="piece.gg" />
         <meta property="og:description" content="__DESCRIPTION__" />
-        <meta property="og:image" content={car.img1} />
+        <meta property="og:image" content={car} />
       </Head>
        
     </>
