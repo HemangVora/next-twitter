@@ -8,8 +8,7 @@ export default function cars({ car }) {
   return (
     <>
       <Head>
-        <title>{id}</title>
-        <title>Piece - Turn Tweets into collectibles</title>
+        <title>{id}</title> 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="piece.gg" />
         <meta
@@ -17,7 +16,7 @@ export default function cars({ car }) {
           content="Piece - Turn Tweets into collectibles"
         />
         <meta name="twitter:creator" content="piece.gg" />
-        <meta name="twitter:image" content={car} />
+        <meta property="og:image" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://piece.gg" />
@@ -27,7 +26,7 @@ export default function cars({ car }) {
         />
         <meta name="twitter:site" content="piece.gg" />
         <meta property="og:description" content="__DESCRIPTION__" />
-        <meta property="og:image" content={car} />
+        <meta property="og:image" content={`https://piece2.herokuapp.com/piece/previewImage/`+id} />
       </Head>
        
     </>
