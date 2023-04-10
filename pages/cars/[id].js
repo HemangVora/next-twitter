@@ -41,7 +41,7 @@ export default function cars({ car }) {
 
 export async function getServerSideProps({ params }) {
   const req = await fetch(
-    `http://localhost:8000/piece/img/${params.id}`
+    `https://piece2.herokuapp.com/piece/img/${params.id}`
   );
 
   const data = await req.json();
