@@ -29,18 +29,13 @@ export default function cars({ car }) {
         <meta property="og:description" content="__DESCRIPTION__" />
         <meta property="og:image" content={car.img1} />
       </Head>
-      <Image
-        src={car.img1}
-        alt="Picture of the author"
-        width={1000}
-        height={500}
-      />
+       
     </>
   );
 }
 
 export async function getServerSideProps({ params }) {
-  const req = `https://piece2.herokuapp.com/piece/img/${params.id}`
+  const req = `https://piece2.herokuapp.com/piece/img/${params.id}`.toString()
 
   return {
     props: { car: req },
